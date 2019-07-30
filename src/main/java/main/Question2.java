@@ -13,15 +13,20 @@ public static void main(String[] args) {
 	System.out.println("Enter the values: ");
 	int Length = sc.nextInt();
 	sc.nextLine();
+	System.out.println("Enter");
 	for(int i=0;i<Length;i++)
 		numbers.add(Integer.parseInt(sc.nextLine()));
+	System.out.println(numbers);
 	Question2 qns2=new Question2();
 	System.out.println(qns2.listWithDuplicates(numbers));
 
 }
-public List<Integer> listWithDuplicates(List<Integer> number){
-	List <Integer> L1 = null;
+public List<Integer> listWithDuplicates(List<Integer> numbers){
+	List <Integer> L1 = new ArrayList<Integer>();
 	//write your code here !! change the L1 to required value
+	
+		L1.addAll(numbers);
+	
 	return L1 ;
 }
 }
